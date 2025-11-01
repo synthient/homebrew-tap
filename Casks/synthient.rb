@@ -3,7 +3,7 @@ cask "synthient" do
   name "synthient"
   desc "Official CLI for synthient"
   homepage "https://github.com/synthient/cli"
-  version "0.0.9"
+  version "0.0.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "synthient" do
   on_macos do
     on_intel do
       url "https://github.com/synthient/cli/releases/download/v#{version}/cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "10efd4e9dfd5479a3bef373083f75972905fd7e62178b49cdab5ba2f0aec5e29"
+      sha256 "10b19d318f49994f50e6edbe9ec748d5f8eb73bcf22a97cbd7b497013a4154dd"
     end
     on_arm do
       url "https://github.com/synthient/cli/releases/download/v#{version}/cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "7300a57563486d874a423cc4121a9213fc8d26e87b7aeaaf1b5688b24b119221"
+      sha256 "fd1d6413f5277e8b53d5545d5a25c025f9dc35d1dc62b8c1ef487ec06992c4d2"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/synthient/cli/releases/download/v#{version}/cli_#{version}_linux_amd64.tar.gz"
-      sha256 "c9dfd0c53e59361ba59970cc135ba2c102b807a6e3d25c2f9024452fd8bf0de3"
+      sha256 "6f60a0e5fe8db5070901f778572222ff2c8ea667c1209e6cc88ec00543bd8cf8"
     end
     on_arm do
       url "https://github.com/synthient/cli/releases/download/v#{version}/cli_#{version}_linux_arm64.tar.gz"
-      sha256 "00a0bbb6940b2d9f4c22a35834138b166b6f6d4db2fb9876f04cf2dc9f454d4f"
+      sha256 "8410386d92634fd58fb9f5849cf783e98afd88c3f095f1978f8a13d3f3668e70"
     end
   end
 

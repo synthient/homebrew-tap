@@ -36,9 +36,9 @@ cask "synthient" do
   zsh_completion "completions/synthient.zsh"
   fish_completion "completions/synthient.fish"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/synthient"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/synthient"]
     end
   end
 
